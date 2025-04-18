@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bot - Your AI Survey Helper</title>  // 🔴 place to rename the bot
+    <title>Bot - Your AI Survey Helper</title>  
     <style>
         body { font-family: Arial, sans-serif; text-align: center; margin: 20px; background-color: #f4f4f4; }
         h2 { color: #333; }
@@ -16,9 +16,9 @@
     </style>
 </head>
 <body>
-    <h2>JeffBot - AI Survey Helper</h2>
+    <h2>Bot - AI Survey Helper</h2>
     <div id="chatbox">
-        <p><b class="bot">JeffBot:</b> Hello! How can I assist you today?</p>
+        <p><b class="bot">Bot:</b> Hello! How can I assist you today?</p>
     </div>
     <input type="text" id="userInput" placeholder="Type your question...">
     <button onclick="sendMessage()">Send</button>
@@ -49,9 +49,9 @@
                 });
 
                 const data = await response.json();
-                document.getElementById("chatbox").innerHTML += `<p><b class="bot">JeffBot:</b> ${data.reply}</p>`;
+                document.getElementById("chatbox").innerHTML += `<p><b class="bot">Bot:</b> ${data.reply}</p>`;
             } catch (error) {
-                document.getElementById("chatbox").innerHTML += `<p><b class="bot">JeffBot:</b> Error: Could not reach the server.</p>`;
+                document.getElementById("chatbox").innerHTML += `<p><b class="bot">Bot:</b> Error: Could not reach the server.</p>`;
             }
         }
     </script>
